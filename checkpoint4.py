@@ -1,11 +1,12 @@
-
+from decimal import Decimal
 import math
+
 # exercise 1
 my_list = ["hola", "kaixo", "hello", "salut"]
 my_tuple = ("nombre", "apellido", "edad", "genero")
 my_float = 15.60
 my_integer = 33
-my_decimal = 33.3456789
+my_decimal = Decimal(33.3456789)
 my_diccionary = {
     "nombre1": "david",
     "nombre2": "ivan",
@@ -52,6 +53,6 @@ print(my_list)
 
 # exercise 9
 
-my_new_tuple = my_tuple + ("domicilio",)
-print(my_new_tuple)
+my_tuple += ("domicilio",)
+print(my_tuple)
  
